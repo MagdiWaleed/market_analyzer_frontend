@@ -79,7 +79,7 @@ else:
                 st.session_state['data_here']=True
                 st.rerun()
             else:
-                response = requests.post("http://127.0.0.1:5000/analyze", json={"message":prompt})
+                response = requests.post("https://5000-dep-01k3r56pn8adeecdsrx9qw5wsf-d.cloudspaces.litng.ai/analyze", json={"message":prompt})
                 data = response.json()['data']
                 st.session_state['data'] = data
                 
