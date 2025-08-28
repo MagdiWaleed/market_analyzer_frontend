@@ -28,7 +28,7 @@ if "data" in st.session_state.keys() and st.session_state.data_here:
             st.markdown(f' {i+1}) {gap}')
     with st.expander("**The Recommendations**: "):
         for i, recommendation in enumerate(marketDetails.finalAnswer.recommendations):
-            st.markdown(f'  {i}) {recommendation}')
+            st.markdown(f'  {i+1}) {recommendation}')
         
     st.markdown('---')
     st.title(f"Competitors Companies :- ({len(marketDetails.companies)})")
